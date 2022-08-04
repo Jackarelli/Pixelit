@@ -20,8 +20,6 @@ text_file = open("Output.txt", "w")
 manimage = "20210411_193710.jpg"
 im = Image.open(manimage)
 
-#fnt = ImageFont.truetype('C:\\Windows\\Fonts\\lucon.ttf', 15)
-
 width, height = im.size
 im = im.resize((int(scaleFactor*width), int(scaleFactor*height*(oneCharWidth/oneCharHeight))), Image.NEAREST)
 width, height = im.size
